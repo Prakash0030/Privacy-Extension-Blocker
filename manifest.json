@@ -1,0 +1,46 @@
+//{
+
+//    "name": "Test",
+//    "description": "Redirect",
+//    "version": "1.0",
+//    "manifest_version": 2,
+//    "background": { "scripts": [ "button.js"] },
+//    "permissions": [
+//      "webRequest",
+//      "*://facebook.com/*",
+//      "*://www.facebook.com/*",
+//      "webRequestBlocking"
+//    ]
+
+//}
+{
+	"version": "1.0",
+	"manifest_version": 2,
+	"name": "my extension",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.facebook.com/*",
+				"https://www.netflix.com/*",
+				"http://www.arkadium.com/*",
+				"https://www.expedia.com/*",
+				"https://www.instagram.com/*",
+				"https://www.uccs.edu/*",
+				"https://www.w3schools.com/*",
+				"https://www.lucidchart.com/*",
+				"https://www.500px.com/*",
+				"https://www.AOL.com/*"
+			],
+			"css": [
+				//"css/style.css"
+			],
+			"js": [ "button.js" ]
+		}
+	],
+	"permissions": [
+		      "webRequest",
+		      "*://facebook.com/*",
+		      "*://www.facebook.com/*",
+		      "webRequestBlocking"
+		    ]
+}
